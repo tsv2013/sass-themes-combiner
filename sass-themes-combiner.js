@@ -26,7 +26,7 @@ module.exports = function(themes, options) {
     var themeImports = {};
     var targetFiles = {};
 
-    globby.sync(themes, { cwd: settings.cwd }).forEach(themePath => {
+    globby.sync(themes, { cwd: settings.cwd }).forEach(function(themePath) {
         var themeName = path.basename(themePath, settings.ext).replace(/_(.+)/, '$1');
         themeImports[themeName] = new Buffer(`@import "${slash(themePath)}";\n\n`);
     });
@@ -39,7 +39,7 @@ module.exports = function(themes, options) {
                 var filename = path.basename(file.path, settings.ext);
                 var dirname = path.dirname(file.path);
 
-                Object.keys(themeImports).forEach(themeName => {
+                Object.keys(themeImports).forEach(function(themeName) {
                     var themedFile = file.clone();
                     if(settings.debug) {
                         console.log("init: " + themeName + ", " + file.path);
@@ -63,7 +63,7 @@ module.exports = function(themes, options) {
                     var dirname = path.dirname(file.path);
 
                     if(!!target) {
-                        Object.keys(themeImports).forEach(themeName => {
+                        Object.keys(themeImports).forEach(function(themeName) {
                             var resultFile = targetFiles[themeName];
                             if(!resultFile) {
                                 resultFile = file.clone();
@@ -88,7 +88,7 @@ module.exports = function(themes, options) {
                 },
                 function(callback) {
                     var files = this;
-                    Object.keys(themeImports).forEach(themeName => {
+                    Object.keys(themeImports).forEach(function(themeName) {
                         var resultFile = targetFiles[themeName];
                         if(!!resultFile) {
                             files.push(resultFile);
