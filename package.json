@@ -1,6 +1,6 @@
 {
   "name": "gulp-sass-themes-combiner",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Inject files with theme variables into SCSS files and combine output CSS.",
   "main": "sass-themes-combiner.js",
   "dependencies": {
