@@ -1,4 +1,5 @@
 # gulp-sass-themes-combiner
+[![NPM](https://nodei.co/npm/gulp-sass-themes-combiner.png)](https://npmjs.org/package/gulp-sass-themes-combiner)
 
 SASS themes injector &amp; combiner.
 
