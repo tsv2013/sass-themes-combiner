@@ -28,7 +28,7 @@ module.exports = function(themes, options) {
 
     globby.sync(themes, { cwd: settings.cwd }).forEach(function(themePath) {
         var themeName = path.basename(themePath, settings.ext).replace(/_(.+)/, '$1');
-        themeImports[themeName] = new Buffer(`@import "${slash(themePath)}";\n\n`);
+        themeImports[themeName] = new Buffer("@import " + slash(themePath) + ";\n\n");
     });
 
     return {
