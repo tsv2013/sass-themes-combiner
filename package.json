@@ -1,0 +1,34 @@
+{
+  "name": "gulp-sass-themes-combiner",
+  "version": "0.0.1",
+  "description": "Inject files with theme variables into SCSS files and combine output CSS.",
+  "main": "sass-themes-combiner.js",
+  "dependencies": {
+    "slash": "^1.0.0",
+    "through2": "^2.0.0",
+    "globby": "^6.0.0"
+  },
+  "peerDependencies": {
+    "gulp": "3.x",
+    "gulp-sass": "2.x"
+  },
+  "author": {
+    "name": "Serge T"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/tsv2013/sass-themes-combiner",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsv2013/sass-themes-combiner.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tsv2013/sass-themes-combiner/issues"
+  },
+  "keywords": [
+    "gulp",
+    "sass",
+    "scss",
+    "themes",
+    "variables"
+  ]
+}
