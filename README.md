@@ -1,8 +1,10 @@
 # gulp-sass-themes-combiner
 
-SASS themes injector &amp; combiner
+SASS themes injector &amp; combiner.
 
 A plugin for [Gulp](https://github.com/gulpjs/gulp) as extension of [gulp-sass](https://github.com/dlmanning/gulp-sass).
+
+Inspired by [gulp-sass-themes](https://github.com/bbuhler/gulp-sass-themes).
 
 ## Usage
 
