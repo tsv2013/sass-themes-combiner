@@ -11,6 +11,7 @@ Inspired by [gulp-sass-themes](https://github.com/bbuhler/gulp-sass-themes).
 Source files
 ```
 +-- styles
+    +-- _default-colors.scss
     +-- body.scss
     +-- form.scss
     +-- login.scss
